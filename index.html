@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Expenses chart component</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style_mobile.css" />
+  </head>
+  <body>
+    <main class="container">
+      <article>
+        <div class="content-header">
+          <div class="content-header-left">
+            <p class="subtitle-white">My balance</p>
+            <div class="medium-amount">$921.48</div>
+          </div>
+          <div class="content-header-right">
+            <svg
+              width="72"
+              height="48"
+              viewbox="0 0 72 48"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g fill="none" fill-rule="evenodd">
+                <circle fill="#382314" cx="48" cy="24" r="24" />
+                <circle stroke="#FFF" stroke-width="2" cx="24" cy="24" r="23" />
+              </g>
+            </svg>
+          </div>
+        </div>
+        <div class="content-main">
+          <h1 class="title">Spending - Last 7 days</h1>
+          <div class="graph">
+            <div class="col-graph">
+              <p class="col-legend">day</p>
+              <div class="col-chart"></div>
+              <div class="col-chart-tool">$456</div>
+            </div>
+          </div>
+          <div class="content-footer">
+            <div class="footer-left">
+              <p class="subtitle">Total this month</p>
+              <div class="amount">$478.33</div>
+            </div>
+            <div class="footer-right">
+              <div class="little-amount">+2.4%</div>
+              <p class="subtitle">from last month</p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
+  </body>
+  <script type="module" src="chart.js"></script>
+</html>
